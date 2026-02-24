@@ -3,18 +3,25 @@
 @section('title', $service->title . ' — İmkan Geliştirme A.Ş.')
 
 @section('content')
-    <section class="pt-48 pb-24 bg-[#006272] text-white relative">
-        <div class="container mx-auto px-6">
+    <section class="pt-48 pb-24 bg-[#006272] text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: radial-gradient(white 1px, transparent 0); background-size: 30px 30px;"></div>
+        <div class="container mx-auto px-6 relative z-10">
             <div class="reveal-up">
-                <nav class="flex mb-8 text-xs font-bold uppercase tracking-widest text-white/60">
+                <nav class="flex mb-6 text-[10px] md:text-xs font-bold uppercase tracking-widest text-white/60">
                     <a href="{{ route('home') }}" class="hover:text-white">Anasayfa</a>
                     <span class="mx-3">/</span>
                     <a href="{{ route('services.index') }}" class="hover:text-white">Hizmetlerimiz</a>
                     <span class="mx-3">/</span>
                     <span class="text-white">{{ $service->title }}</span>
                 </nav>
-                <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-4 uppercase">{{ $service->title }}</h1>
-                <div class="w-32 h-1.5 bg-white rounded-full"></div>
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 uppercase">{{ $service->title }}</h1>
+                <div class="w-24 h-1 bg-white mb-4"></div>
+                @if($service->description)
+                    <p class="text-white/80 max-w-2xl text-sm md:text-base font-light">
+                        {{ Str::limit(strip_tags($service->description), 180) }}
+                    </p>
+                @endif
             </div>
         </div>
     </section>

@@ -4,24 +4,16 @@
 
 @section('content')
     <!-- Header Section -->
-    <section class="pt-48 pb-32 bg-[#006272] text-white relative overflow-hidden">
-        <!-- Background Accents -->
-        <div class="absolute inset-0 opacity-10">
-            <div
-                class="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl">
-            </div>
-            <div
-                class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl">
-            </div>
-        </div>
+    <section class="pt-48 pb-24 bg-[#006272] text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: radial-gradient(white 1px, transparent 0); background-size: 30px 30px;"></div>
 
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl">
-                <h1 class="text-5xl md:text-7xl font-bold mb-8 reveal-up leading-tight">BİZE <span
-                        class="opacity-50">ULAŞIN</span></h1>
-                <p class="text-xl md:text-2xl opacity-80 max-w-2xl reveal-up border-l-4 border-white/30 pl-8 py-2">
-                    Projeniz, sorularınız veya iş birliği teklifleriniz için her zaman buradayız. Geleceği birlikte inşa
-                    edelim.
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 reveal-up uppercase">İLETİŞİM</h1>
+                <div class="w-24 h-1 bg-white mb-8 reveal-up"></div>
+                <p class="text-white/80 max-w-2xl text-lg font-light reveal-up">
+                    Projeniz, sorularınız veya iş birliği teklifleriniz için her zaman buradayız. Geleceği birlikte inşa edelim.
                 </p>
             </div>
         </div>

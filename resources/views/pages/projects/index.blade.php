@@ -3,12 +3,16 @@
 @section('title', 'Projelerimiz — İmkan Geliştirme A.Ş.')
 
 @section('content')
-    <section class="pt-48 pb-20 bg-[#006272] text-white">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 reveal-up">PROJELERİMİZ</h1>
+    <section class="pt-48 pb-24 bg-[#006272] text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: radial-gradient(white 1px, transparent 0); background-size: 30px 30px;"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 reveal-up uppercase">PROJELERİMİZ</h1>
             <div class="w-24 h-1 bg-white mb-8 reveal-up"></div>
-            <p class="text-white/80 max-w-2xl reveal-up">Modern mimari, üstün mühendislik ve kusursuz işçilikle hayata
-                geçirdiğimiz tüm projelerimizi buradan inceleyebilirsiniz.</p>
+            <p class="text-white/80 max-w-2xl text-lg font-light reveal-up">
+                Modern mimari, üstün mühendislik ve kusursuz işçilikle hayata geçirdiğimiz projelerimizi inceleyin.
+                Devam eden ve tamamlanmış tüm projelerimizi burada bulabilirsiniz.
+            </p>
         </div>
     </section>
 

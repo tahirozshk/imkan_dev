@@ -259,9 +259,9 @@
                     Projeleriniz hakkında her türlü soruyu sorabilirsiniz.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl reveal-up">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl reveal-up lg:min-h-[450px]">
                 <!-- Map Side -->
-                <div class="h-[600px] bg-gray-100 overflow-hidden rounded-t-[3rem] lg:rounded-tr-none lg:rounded-l-[3rem]">
+                <div class="h-72 lg:h-full bg-gray-100 overflow-hidden rounded-t-[3rem] lg:rounded-tr-none lg:rounded-l-[3rem]">
                     <iframe title="İmkan Geliştirme Harita" class="w-full h-full"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102602.44123456!2d33.87654321!3d36.37654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d0a123456789:0x1234567890abcdef!2sSilifke%2C%20Mersin!5e0!3m2!1str!2str!4v1234567890"
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -269,7 +269,7 @@
 
                 <!-- Form Side -->
                 <div
-                    class="bg-white p-12 lg:p-16 flex flex-col justify-center rounded-b-[3rem] lg:rounded-bl-none lg:rounded-r-[3rem]">
+                    class="bg-white p-12 lg:p-16 flex flex-col justify-center h-full rounded-b-[3rem] lg:rounded-bl-none lg:rounded-r-[3rem]">
                     <form action="{{ route('contact.store') }}" method="POST" class="space-y-6" x-data="{ sending: false }"
                         @submit="sending = true">
                         @csrf
