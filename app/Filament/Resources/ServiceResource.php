@@ -65,6 +65,7 @@ class ServiceResource extends Resource
                         FileUpload::make('image')
                             ->label('Hizmet Görseli')
                             ->image()
+                            ->disk('public')
                             ->directory('services')
                             ->columnSpanFull(),
                     ])->columns(2),
@@ -76,7 +77,8 @@ class ServiceResource extends Resource
         return $table
             ->columns([
                 ImageColumn::make('image')
-                    ->label('Görsel'),
+                    ->label('Görsel')
+                    ->disk('public'),
                 TextColumn::make('title')
                     ->label('Hizmet Adı')
                     ->searchable()

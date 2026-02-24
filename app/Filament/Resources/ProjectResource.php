@@ -89,15 +89,19 @@ class ProjectResource extends Resource
                         FileUpload::make('image')
                             ->label('Ana Görsel')
                             ->image()
+                            ->disk('public')
                             ->directory('projects/main')
-                            ->imageEditor(),
+                            ->imageEditor()
+                            ->imagePreviewHeight('250'),
 
                         FileUpload::make('gallery')
                             ->label('Proje Galerisi')
                             ->image()
                             ->multiple()
+                            ->disk('public')
                             ->directory('projects/gallery')
-                            ->reorderable(),
+                            ->reorderable()
+                            ->imagePreviewHeight('250'),
                     ])->columns(2),
 
                 Section::make('Ek Detaylar')
@@ -122,6 +126,7 @@ class ProjectResource extends Resource
             ->columns([
                 ImageColumn::make('image')
                     ->label('Görsel')
+                    ->disk('public')
                     ->circular(),
                 TextColumn::make('title')
                     ->label('Proje Adı')
