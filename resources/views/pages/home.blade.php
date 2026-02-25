@@ -225,11 +225,12 @@
     <section class="relative py-20 bg-white overflow-hidden">
         <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="reveal-up">
-                <img src="https://picsum.photos/seed/stats-img/800/800" class="w-full h-auto rounded-lg shadow-2xl"
+                <img src="https://picsum.photos/seed/stats-img/800/800"
+                    class="w-full max-w-[54rem] lg:max-h-[410px] object-cover rounded-2xl shadow-2xl mx-auto"
                     alt="Stats Section">
             </div>
-            <div class="reveal-up bg-white p-8 lg:p-16 border-l-4 border-primary">
-                <h3 class="text-primary text-4xl mb-4 font-bold">45 YILLIK TECRÜBE, GÜVENLİ GELECEK</h3>
+            <div class="reveal-up bg-white p-8 lg:p-14 border-l-4 border-primary">
+                <h3 class="text-primary text-3xl mb-4 font-bold">45 YILLIK TECRÜBE, GÜVENLİ GELECEK</h3>
                 <div class="w-20 h-1 bg-primary mb-8"></div>
                 <p class="text-gray-600 mb-8 leading-relaxed">İmkan Geliştirme olarak kurulduğumuz günden bu yana, güvenli
                     ve modern yaşam alanları inşaa etmeyi görev edindik. Her projede daha iyiyi hedefleyerek sektöre öncülük
