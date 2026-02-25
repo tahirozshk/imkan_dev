@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Hero Slider Segment -->
-    <section class="relative h-[70vh] w-full overflow-hidden bg-dark">
+    <section class="relative h-[60vh] w-full overflow-hidden bg-dark">
         <div class="absolute inset-0">
             <img src="{{ $project->image ? asset('storage/' . $project->image) : 'https://picsum.photos/seed/p-' . $project->id . '/1920/1080' }}"
                 class="w-full h-full object-cover">
@@ -13,10 +13,10 @@
         <div class="container mx-auto px-6 relative h-full flex flex-col justify-end pb-20">
             <div class="reveal-up">
                 <span
-                    class="inline-block bg-primary text-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] mb-6 shadow-xl">
+                    class="inline-block bg-primary text-white px-5 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.25em] mb-4 shadow-xl">
                     {{ $project->status == 'ongoing' ? 'Devam Eden Proje' : 'Tamamlanan Proje' }}
                 </span>
-                <h1 class="text-4xl md:text-7xl font-bold text-white mb-4 uppercase tracking-tight">{{ $project->title }}
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-3 uppercase tracking-tight">{{ $project->title }}
                 </h1>
                 <div class="flex items-center text-white/80 space-x-6 text-sm md:text-base font-medium">
                     <span class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-primary"></i>
@@ -30,21 +30,21 @@
     </section>
 
     <!-- Info Section -->
-    <section class="py-24 bg-white relative">
+    <section class="py-20 bg-white relative">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
                 <!-- Left: Content -->
                 <div class="lg:col-span-2 reveal-up">
-                    <h2 class="text-3xl font-bold text-primary mb-8 uppercase tracking-wider">PROJE HAKKINDA</h2>
-                    <div class="prose prose-lg max-w-none text-gray-600 leading-relaxed">
+                    <h2 class="text-2xl font-bold text-primary mb-6 uppercase tracking-wider">PROJE HAKKINDA</h2>
+                    <div class="prose max-w-none text-gray-600 leading-relaxed">
                         {!! $project->content ?? $project->description !!}
                     </div>
                 </div>
 
                 <!-- Right: Details Sidebar -->
                 <div class="lg:col-span-1 reveal-up">
-                    <div class="bg-gray-50 rounded-3xl p-10 border border-gray-100 shadow-sm">
-                        <h3 class="text-xl font-bold text-primary mb-8 border-b border-gray-200 pb-4 uppercase">DETAYLAR
+                    <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-primary mb-6 border-b border-gray-200 pb-3 uppercase">DETAYLAR
                         </h3>
                         <ul class="space-y-6">
                             <li class="flex justify-between items-center text-sm">

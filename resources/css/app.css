@@ -99,7 +99,7 @@
     }
 
     .section-title {
-        @apply text-5xl md:text-7xl mb-6 relative inline-block;
+        @apply text-4xl md:text-5xl mb-6 relative inline-block;
     }
 
     .glass {

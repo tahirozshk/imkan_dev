@@ -4,15 +4,15 @@
 
 @section('content')
     <!-- Header Section -->
-    <section class="pt-48 pb-24 bg-[#006272] text-white overflow-hidden relative">
+    <section class="pt-40 pb-18 bg-[#006272] text-white overflow-hidden relative">
         <div class="absolute inset-0 opacity-10"
             style="background-image: radial-gradient(white 1px, transparent 0); background-size: 30px 30px;"></div>
 
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl">
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 reveal-up uppercase">İLETİŞİM</h1>
-                <div class="w-24 h-1 bg-white mb-8 reveal-up"></div>
-                <p class="text-white/80 max-w-2xl text-lg font-light reveal-up">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-4 reveal-up uppercase">İLETİŞİM</h1>
+                <div class="w-20 h-1 bg-white mb-6 reveal-up"></div>
+                <p class="text-white/80 max-w-2xl text-base md:text-lg font-light reveal-up">
                     Projeniz, sorularınız veya iş birliği teklifleriniz için her zaman buradayız. Geleceği birlikte inşa edelim.
                 </p>
             </div>
@@ -20,14 +20,14 @@
     </section>
 
     <!-- Main Content -->
-    <section class="py-24 bg-gray-50">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 
                 <!-- Left Side: Contact Info (Minimal Boxed) -->
                 <div class="lg:col-span-5 reveal-up">
                     <div
-                        class="bg-white p-10 md:p-14 rounded-[3rem] shadow-2xl h-full flex flex-col justify-between border border-gray-50">
+                        class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl h-full flex flex-col justify-between border border-gray-50">
                         <div class="space-y-10">
                             <!-- Headline -->
                             <div>
@@ -49,8 +49,7 @@
                                         <p
                                             class="text-sm font-bold text-dark mb-1 underline decoration-primary/20 underline-offset-4">
                                             Genel Merkez</p>
-                                        <p class="text-gray-400 text-sm leading-relaxed">Atatürk Cad. No:123<br>Silifke,
-                                            Mersin</p>
+                                        <p class="text-gray-400 text-sm leading-relaxed">Marmara 21. Sokak 32/1<br>Nicosia</p>
                                     </div>
                                 </div>
 
@@ -59,9 +58,9 @@
                                         class="w-10 h-10 flex items-center justify-center text-primary/40 group-hover:text-primary transition-colors duration-300 mr-4">
                                         <i class="fas fa-phone-alt text-xl"></i>
                                     </div>
-                                    <a href="tel:+905320000000"
+                                    <a href="tel:+905488500850"
                                         class="text-sm font-medium text-dark hover:text-primary transition-all tracking-wide">+90
-                                        532 000 00 00</a>
+                                        548 850 08 50</a>
                                 </div>
 
                                 <div class="flex items-center group">
@@ -69,29 +68,33 @@
                                         class="w-10 h-10 flex items-center justify-center text-primary/40 group-hover:text-primary transition-colors duration-300 mr-4">
                                         <i class="fas fa-envelope text-xl"></i>
                                     </div>
-                                    <a href="mailto:info@imkangilistirme.com"
-                                        class="text-sm font-medium text-dark hover:text-primary transition-all">info@imkangilistirme.com</a>
+                                    <a href="mailto:info@imkandevelopment.com"
+                                        class="text-sm font-medium text-dark hover:text-primary transition-all">info@imkandevelopment.com</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Social (Minimal) -->
                         <div class="pt-12 flex items-center space-x-6">
-                            <a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="text-gray-300 hover:text-primary transition-colors duration-300"><i
-                                    class="fab fa-whatsapp text-lg"></i></a>
+                            <a href="https://www.facebook.com/imkandevelopment" target="_blank"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/imkandevelopment/" target="_blank"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/905488500850" target="_blank"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Side: Contact Form -->
                 <div class="lg:col-span-7 reveal-up">
-                    <div class="bg-white p-10 md:p-14 rounded-[3rem] shadow-2xl relative overflow-hidden">
+                    <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl relative overflow-hidden">
                         <!-- Decorative Header -->
                         <div class="mb-12">
                             <h2 class="text-3xl font-bold text-dark mb-4 uppercase tracking-tight">Hızlı <span
@@ -167,16 +170,16 @@
     </section>
 
     <!-- Google Maps Section -->
-    <section class="py-24 bg-white relative">
+    <section class="py-20 bg-white relative">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-dark mb-4 uppercase tracking-tighter">Lokasyonumuz</h2>
                 <div class="w-20 h-1 bg-primary mx-auto"></div>
             </div>
 
-            <div class="h-[500px] w-full shadow-2xl rounded-[3rem] overflow-hidden border-8 border-white reveal-up">
+            <div class="h-[400px] w-full shadow-2xl rounded-[3rem] overflow-hidden border-8 border-white reveal-up">
                 <iframe title="İmkan Geliştirme Harita" class="w-full h-full"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102602.44123456!2d33.87654321!3d36.37654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d0a123456789:0x1234567890abcdef!2sSilifke%2C%20Mersin!5e0!3m2!1str!2str!4v1234567890"
+                    src="https://www.google.com/maps?q=Marmara%2021.%20Sokak%2032/1,%20Nicosia&output=embed"
                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>

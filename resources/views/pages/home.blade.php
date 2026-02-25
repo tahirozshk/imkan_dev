@@ -34,7 +34,7 @@
     </section>
 
     <!-- Section 2: Hizmetler Grid -->
-    <section class="py-24 bg-white relative overflow-hidden">
+    <section class="py-20 bg-white relative overflow-hidden">
         <!-- Background Pattern (Subtle Lines/Grid) -->
         <div class="absolute inset-0 z-0 pointer-events-none">
             <!-- Grid Pattern -->
@@ -48,9 +48,9 @@
         </div>
 
         <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 reveal-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">HİZMETLERİMİZ</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+            <div class="text-center mb-14 reveal-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">HİZMETLERİMİZ</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-5"></div>
                 <p class="text-gray-500 max-w-2xl mx-auto">İnşaat ve mimari alanındaki uzmanlığımızla, projenin her aşamasında profesyonel çözümler üretiyoruz.</p>
             </div>
 
@@ -97,7 +97,7 @@
     </section>
 
     <!-- Section 3: Deprem Testi -->
-    <section class="bg-primary py-24 relative overflow-hidden">
+    <section class="bg-primary py-20 relative overflow-hidden">
         <!-- Pulse Effect Background -->
         <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/5 rounded-full animate-ping">
@@ -107,8 +107,8 @@
             <div class="mb-8 p-6 bg-white/10 rounded-full backdrop-blur-md">
                 <i class="fas fa-shield-alt text-4xl"></i>
             </div>
-            <h2 class="text-4xl md:text-5xl mb-6 font-bold uppercase tracking-wider">EVİNİZ DEPREME HAZIR MI?</h2>
-            <p class="text-xl max-w-2xl mb-10 opacity-90 font-light">Mevcut yapılarınızın dayanıklılığını ölçüyor, profesyonel tekniklerle güçlendiriyoruz. Güvenli bir gelecek için bugün adım atın.</p>
+            <h2 class="text-3xl md:text-4xl mb-5 font-bold uppercase tracking-wider">EVİNİZ DEPREME HAZIR MI?</h2>
+            <p class="text-lg max-w-2xl mb-8 opacity-90 font-light">Mevcut yapılarınızın dayanıklılığını ölçüyor, profesyonel tekniklerle güçlendiriyoruz. Güvenli bir gelecek için bugün adım atın.</p>
             <a href="{{ route('earthquake-test') }}"
                 class="px-12 py-5 bg-white text-primary font-bold uppercase tracking-[0.2em] text-sm rounded-2xl hover:scale-105 transition-transform shadow-2xl">
                 ÜCRETSİZ BİLGİ ALIN
@@ -117,11 +117,11 @@
     </section>
 
     <!-- Section 4: Projelerimiz (Image 1/2 Style) -->
-    <section class="py-24 bg-gray-50 text-center relative overflow-hidden">
+    <section class="py-20 bg-gray-50 text-center relative overflow-hidden">
         <div class="container mx-auto px-6">
-            <div class="mb-20 reveal-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">PROJELERİMİZ</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+            <div class="mb-14 reveal-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">PROJELERİMİZ</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
                 <p class="text-gray-500 max-w-2xl mx-auto">Hayallerinizdeki yaşam alanlarını, kalite ve estetiğin buluştuğu özgün projelerle inşa ediyoruz.</p>
             </div>
 
@@ -196,7 +196,7 @@
     </section>
 
     <!-- Section 5: Stats -->
-    <section class="py-20 bg-primary text-white border-y border-white/10">
+    <section class="py-16 bg-primary text-white border-y border-white/10">
         <div class="container mx-auto px-6 text-center">
             <p class="mb-16 text-lg opacity-90 max-w-3xl mx-auto uppercase tracking-widest">Yılların verdiği tecrübe ve
                 yüzlerce projeyi başarıyla teslim etmenin haklı gururu.</p>
@@ -222,7 +222,7 @@
     </section>
 
     <!-- Section 6: CTA and Stats Image -->
-    <section class="relative py-24 bg-white overflow-hidden">
+    <section class="relative py-20 bg-white overflow-hidden">
         <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="reveal-up">
                 <img src="https://picsum.photos/seed/stats-img/800/800" class="w-full h-auto rounded-lg shadow-2xl"
@@ -239,7 +239,7 @@
     </section>
 
     <!-- Section 7: Final CTA -->
-    <section class="bg-primary py-16 text-center text-white">
+    <section class="bg-primary py-14 text-center text-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-8 uppercase tracking-wider">Projenize Başlamaya Hazırız</h2>
             <a href="{{ route('contact.index') }}"
@@ -250,7 +250,7 @@
     </section>
 
     <!-- Section 8: İletişim + Harita -->
-    <section class="py-24 bg-white">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 reveal-up">
                 <h3 class="text-4xl md:text-5xl font-bold text-primary mb-4">BİZE MESAJ GÖNDERİN</h3>
@@ -259,17 +259,17 @@
                     Projeleriniz hakkında her türlü soruyu sorabilirsiniz.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl reveal-up lg:min-h-[450px]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl reveal-up lg:min-h-[360px] rounded-[3rem] overflow-hidden bg-white">
                 <!-- Map Side -->
-                <div class="h-72 lg:h-full bg-gray-100 overflow-hidden rounded-t-[3rem] lg:rounded-tr-none lg:rounded-l-[3rem]">
+                <div class="h-64 lg:h-full bg-gray-100 overflow-hidden lg:rounded-none">
                     <iframe title="İmkan Geliştirme Harita" class="w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102602.44123456!2d33.87654321!3d36.37654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d0a123456789:0x1234567890abcdef!2sSilifke%2C%20Mersin!5e0!3m2!1str!2str!4v1234567890"
+                        src="https://www.google.com/maps?q=Marmara%2021.%20Sokak%2032/1,%20Nicosia&output=embed"
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
                 <!-- Form Side -->
                 <div
-                    class="bg-white p-12 lg:p-16 flex flex-col justify-center h-full rounded-b-[3rem] lg:rounded-bl-none lg:rounded-r-[3rem]">
+                    class="bg-white p-8 lg:p-10 flex flex-col justify-center h-full rounded-b-[3rem] lg:rounded-bl-none lg:rounded-r-[3rem]">
                     <form action="{{ route('contact.store') }}" method="POST" class="space-y-6" x-data="{ sending: false }"
                         @submit="sending = true">
                         @csrf

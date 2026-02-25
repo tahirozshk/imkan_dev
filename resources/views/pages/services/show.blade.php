@@ -3,7 +3,7 @@
 @section('title', $service->title . ' — İmkan Geliştirme A.Ş.')
 
 @section('content')
-    <section class="pt-48 pb-24 bg-[#006272] text-white overflow-hidden relative">
+    <section class="pt-40 pb-18 bg-[#006272] text-white overflow-hidden relative">
         <div class="absolute inset-0 opacity-10"
             style="background-image: radial-gradient(white 1px, transparent 0); background-size: 30px 30px;"></div>
         <div class="container mx-auto px-6 relative z-10">
@@ -15,8 +15,8 @@
                     <span class="mx-3">/</span>
                     <span class="text-white">{{ $service->title }}</span>
                 </nav>
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 uppercase">{{ $service->title }}</h1>
-                <div class="w-24 h-1 bg-white mb-4"></div>
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-4 uppercase">{{ $service->title }}</h1>
+                <div class="w-20 h-1 bg-white mb-4"></div>
                 @if($service->description)
                     <p class="text-white/80 max-w-2xl text-sm md:text-base font-light">
                         {{ Str::limit(strip_tags($service->description), 180) }}
@@ -26,13 +26,13 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left: Content -->
                 <div class="order-2 lg:order-1 reveal-up">
-                    <h2 class="text-3xl font-bold text-primary mb-8 uppercase tracking-wider">HİZMET DETAYLARI</h2>
-                    <div class="prose prose-lg max-w-none text-gray-600 leading-relaxed mb-10">
+                    <h2 class="text-2xl font-bold text-primary mb-6 uppercase tracking-wider">HİZMET DETAYLARI</h2>
+                    <div class="prose max-w-none text-gray-600 leading-relaxed mb-8">
                         {!! $service->content ?? $service->description !!}
                     </div>
 
@@ -54,10 +54,10 @@
                 <div class="order-1 lg:order-2 reveal-up">
                     <div class="relative group">
                         <div
-                            class="absolute -inset-4 bg-primary/5 rounded-[3rem] transform rotate-3 transition-transform group-hover:rotate-0">
+                            class="absolute -inset-3 bg-primary/5 rounded-[3rem] transform rotate-3 transition-transform group-hover:rotate-0">
                         </div>
                         <img src="{{ Str::startsWith($service->image, 'http') ? $service->image : asset('storage/' . $service->image) }}"
-                            class="relative w-full h-[600px] object-cover rounded-[2.5rem] shadow-2xl z-10"
+                            class="relative w-full h-[480px] object-cover rounded-[2.5rem] shadow-2xl z-10"
                             alt="{{ $service->title }}">
 
                         <!-- Floating Badge -->
@@ -78,10 +78,10 @@
     </section>
 
     <!-- Why Us Segment -->
-    <section class="py-24 bg-gray-50">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16 reveal-up">
-                <h2 class="text-3xl font-bold text-primary uppercase tracking-[0.2em]">NEDEN BİZİ SEÇMELİSİNİZ?</h2>
+            <div class="text-center mb-12 reveal-up">
+                <h2 class="text-2xl font-bold text-primary uppercase tracking-[0.2em]">NEDEN BİZİ SEÇMELİSİNİZ?</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 @foreach([

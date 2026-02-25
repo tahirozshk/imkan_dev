@@ -10,8 +10,12 @@
         <div class="flex justify-between items-center mb-4 relative">
             <!-- Left: Socials -->
             <div class="flex items-center space-x-4 w-1/3">
-                <a href="#" class="hover:opacity-70 transition-opacity"><i class="fab fa-facebook-f text-lg"></i></a>
-                <a href="#" class="hover:opacity-70 transition-opacity"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://www.facebook.com/imkandevelopment" target="_blank"
+                    class="hover:opacity-70 transition-opacity"><i class="fab fa-facebook-f text-lg"></i></a>
+                <a href="https://www.instagram.com/imkandevelopment/" target="_blank"
+                    class="hover:opacity-70 transition-opacity"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://wa.me/905488500850" target="_blank"
+                    class="hover:opacity-70 transition-opacity"><i class="fab fa-whatsapp text-lg"></i></a>
             </div>
 
             <!-- Center: Logo -->
@@ -26,11 +30,16 @@
             </div>
 
             <!-- Right: Contact -->
-            <div class="w-1/3 flex justify-end items-center">
-                <a href="tel:+902120000000"
+            <div class="w-1/3 flex flex-col justify-end items-end space-y-1">
+                <a href="tel:+905488500850"
                     class="flex items-center font-bold tracking-wider text-sm md:text-base hover:opacity-70 transition-opacity">
                     <i class="fas fa-phone-alt mr-3 text-lg rotate-12"></i>
-                    +90 212 000 00 00
+                    +90 548 850 08 50
+                </a>
+                <a href="mailto:info@imkandevelopment.com"
+                    class="flex items-center text-xs md:text-sm hover:opacity-70 transition-opacity">
+                    <i class="fas fa-envelope mr-3 text-lg"></i>
+                    info@imkandevelopment.com
                 </a>
             </div>
 
@@ -104,6 +113,7 @@
         <a href="{{ route('contact.index') }}"
             class="block text-white hover:text-white/70 text-lg font-bold uppercase tracking-widest">İLETİŞİM</a>
         <hr class="border-white/10">
-        <a href="tel:+902120000000" class="block text-white text-xl font-bold">+90 212 000 00 00</a>
+        <a href="tel:+905488500850" class="block text-white text-xl font-bold">+90 548 850 08 50</a>
+        <a href="mailto:info@imkandevelopment.com" class="block text-white text-base mt-1">info@imkandevelopment.com</a>
     </div>
 </nav>

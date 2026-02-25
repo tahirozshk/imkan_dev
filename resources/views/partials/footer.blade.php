@@ -10,30 +10,33 @@
                     ediyoruz. Geleceğin sağlam yapılarını bugün inşa ediyoruz.
                 </p>
                 <div class="flex space-x-3">
-                    <a href="#"
+                    <a href="https://www.facebook.com/imkandevelopment" target="_blank"
                         class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
                         <i class="fab fa-facebook-f text-xs"></i>
                     </a>
-                    <a href="#"
+                    <a href="https://www.instagram.com/imkandevelopment/" target="_blank"
                         class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
                         <i class="fab fa-instagram text-xs"></i>
                     </a>
-                    <a href="#"
+                    <a href="https://wa.me/905488500850" target="_blank"
                         class="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
-                        <i class="fab fa-linkedin-in text-xs"></i>
+                        <i class="fab fa-whatsapp text-xs"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Quick Links -->
+            <!-- Projects -->
             <div>
-                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest">Kurumsal</h4>
+                <h4 class="text-lg font-bold mb-8 uppercase tracking-widest">Projeler</h4>
                 <ul class="space-y-4 text-white/70 text-sm">
-                    <li><a href="{{ route('about') }}" class="hover:text-white transition-colors">Hakkımızda</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Vizyon & Misyon</a></li>
-                    <li><a href="#" class="hover:text-white transition-colors">Yönetim Kurulu</a></li>
-                    <li><a href="{{ route('contact.index') }}" class="hover:text-white transition-colors">İletişim</a>
-                    </li>
+                    @foreach($footerProjects as $project)
+                        <li>
+                            <a href="{{ route('projects.show', $project->slug) }}"
+                                class="hover:text-white transition-colors">
+                                {{ $project->title }}
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
 
@@ -41,9 +44,13 @@
             <div>
                 <h4 class="text-lg font-bold mb-8 uppercase tracking-widest">Hizmetlerimiz</h4>
                 <ul class="space-y-4 text-white/70 text-sm">
-                    @foreach($navServices->take(4) as $service)
-                        <li><a href="{{ route('services.show', $service->slug) }}"
-                                class="hover:text-white transition-colors">{{ $service->title }}</a></li>
+                    @foreach($navServices as $service)
+                        <li>
+                            <a href="{{ route('services.show', $service->slug) }}"
+                                class="hover:text-white transition-colors">
+                                {{ $service->title }}
+                            </a>
+                        </li>
                     @endforeach
                 </ul>
             </div>
@@ -60,7 +67,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
-                        <span>Silifke, Mersin</span>
+                        <span>Marmara 21. Sokak 32/1, Nicosia</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-3 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,16 +75,16 @@
                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                             </path>
                         </svg>
-                        <a href="mailto:info@imkangilistirme.com"
-                            class="hover:text-white transition-colors">info@imkangilistirme.com</a>
+                        <a href="mailto:info@imkandevelopment.com"
+                            class="hover:text-white transition-colors">info@imkandevelopment.com</a>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-3 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                d="M2.5 5.75C2.5 4.783 3.283 4 4.25 4h2.1c.6 0 1.13.337 1.39.87l1.24 2.58a1.5 1.5 0 01-.42 1.79l-1.28 1.06a.75.75 0 00-.21.9 8.5 8.5 0 004.51 4.51.75.75 0 00.9-.21l1.06-1.28a1.5 1.5 0 011.79-.42l2.58 1.24c.533.26.87.79.87 1.39v2.1c0 .967-.783 1.75-1.75 1.75H17c-7.18 0-13-5.82-13-13V5.75z">
                             </path>
                         </svg>
-                        <a href="tel:+905320000000" class="hover:text-white transition-colors">+90 532 000 00 00</a>
+                        <a href="tel:+905488500850" class="hover:text-white transition-colors">+90 548 850 08 50</a>
                     </li>
                 </ul>
             </div>

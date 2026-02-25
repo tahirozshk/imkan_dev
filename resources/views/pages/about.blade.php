@@ -3,21 +3,21 @@
 @section('title', 'Hakkımızda — İmkan Geliştirme A.Ş.')
 
 @section('content')
-    <section class="pt-60 pb-32 bg-[#006272] text-white relative overflow-hidden">
+    <section class="pt-44 pb-20 bg-[#006272] text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10"
             style="background-image: radial-gradient(white 1px, transparent 0); background-size: 30px 30px;"></div>
         <div class="container mx-auto px-6 text-center">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-7xl font-bold mb-8 reveal-up uppercase tracking-tight">45 YILLIK GÜVEN HİKAYESİ
+                <h1 class="text-3xl md:text-5xl font-bold mb-6 reveal-up uppercase tracking-tight">45 YILLIK GÜVEN HİKAYESİ
                 </h1>
-                <div class="w-32 h-1.5 bg-white mx-auto mb-10 rounded-full reveal-up"></div>
-                <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light reveal-up">1981 yılında başladığımız
+                <div class="w-24 h-1.5 bg-white mx-auto mb-8 rounded-full reveal-up"></div>
+                <p class="text-lg md:text-xl text-white/90 leading-relaxed font-light reveal-up">1981 yılında başladığımız
                     mühendislik yolculuğumuza, bugün modern yapılar ve ödüllü projelerle devam ediyoruz.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-32 bg-white relative">
+    <section class="py-24 bg-white relative">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div class="reveal-up relative group">
@@ -43,13 +43,13 @@
                     </div>
                     <div class="grid grid-cols-2 gap-8 reveal-up">
                         <div
-                            class="p-10 bg-gray-50 rounded-[2.5rem] border border-gray-100 hover:shadow-xl transition-all duration-500 text-center">
-                            <div class="text-5xl font-bold text-primary mb-3 tracking-tighter">45+</div>
+                            class="p-8 bg-gray-50 rounded-[2.5rem] border border-gray-100 hover:shadow-xl transition-all duration-500 text-center">
+                            <div class="text-4xl font-bold text-primary mb-2 tracking-tighter">45+</div>
                             <div class="text-[10px] uppercase tracking-widest font-bold text-gray-400">Yıllık Tecrübe</div>
                         </div>
                         <div
-                            class="p-10 bg-gray-50 rounded-[2.5rem] border border-gray-100 hover:shadow-xl transition-all duration-500 text-center">
-                            <div class="text-5xl font-bold text-primary mb-3 tracking-tighter">100+</div>
+                            class="p-8 bg-gray-50 rounded-[2.5rem] border border-gray-100 hover:shadow-xl transition-all duration-500 text-center">
+                            <div class="text-4xl font-bold text-primary mb-2 tracking-tighter">100+</div>
                             <div class="text-[10px] uppercase tracking-widest font-bold text-gray-400">Teslim Proje</div>
                         </div>
                     </div>
