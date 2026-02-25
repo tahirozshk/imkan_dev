@@ -143,12 +143,12 @@
                                         @endif
                                     </div>
                                     
-                                    <!-- Teal Content (Matching Image 1/2) -->
-                                    <div class="bg-primary p-8 flex-grow flex flex-col text-left text-white relative">
-                                        <h3 class="text-xl font-bold mb-4 tracking-tight uppercase">{{ $project->title }}</h3>
-                                        <div class="w-full h-px bg-white/20 mb-6"></div>
+                                    <!-- Teal Content (reduced height so image dominates) -->
+                                    <div class="bg-primary px-6 py-4 flex flex-col text-left text-white relative">
+                                        <h3 class="text-base md:text-lg font-bold mb-2 tracking-tight uppercase">{{ $project->title }}</h3>
+                                        <div class="w-full h-px bg-white/20 mb-3"></div>
                                         
-                                        <div class="space-y-4 mb-8">
+                                        <div class="space-y-2 mb-4 text-xs md:text-sm">
                                             <div class="flex items-center text-sm">
                                                 <i class="fas fa-map-marker-alt w-6 text-white/60"></i>
                                                 <span class="font-medium">{{ $project->location ?? 'Belirtilmedi' }}</span>
@@ -259,9 +259,9 @@
                     Projeleriniz hakkında her türlü soruyu sorabilirsiniz.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl reveal-up lg:min-h-[360px] rounded-[3rem] overflow-hidden bg-white">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl reveal-up lg:min-h-[260px] rounded-[2rem] overflow-hidden bg-white">
                 <!-- Map Side -->
-                <div class="h-64 lg:h-full bg-gray-100 overflow-hidden lg:rounded-none">
+                <div class="h-48 lg:h-full bg-gray-100 overflow-hidden lg:rounded-none">
                     <iframe title="İmkan Geliştirme Harita" class="w-full h-full"
                         src="https://www.google.com/maps?q=Marmara%2021.%20Sokak%2032/1,%20Nicosia&output=embed"
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -269,7 +269,7 @@
 
                 <!-- Form Side -->
                 <div
-                    class="bg-white p-8 lg:p-10 flex flex-col justify-center h-full rounded-b-[3rem] lg:rounded-bl-none lg:rounded-r-[3rem]">
+                    class="bg-white p-5 lg:p-6 flex flex-col justify-center h-full">
                     <form action="{{ route('contact.store') }}" method="POST" class="space-y-6" x-data="{ sending: false }"
                         @submit="sending = true">
                         @csrf
